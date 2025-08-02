@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Menu - Coffee Brew</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Coffee Brew</a>
+        <button class="menu-btn">Menu</button>
+    </header>
+
+    <div class="side-menu" id="sideMenu" style="width: 350px;">
+        <button class="close-btn" id="closeMenu">×</button>
+        <div class="intro-text" style="font-size: 2rem;">
+            We brew passion into every cup.<br />
+            Explore our story and sips.
+        </div>
+        <div class="menu-stack">
+            <a href="index.html" class="menu-item" style="font-size: 1.5rem;">HOME</a>
+            <a href="about.html" class="menu-item" style="font-size: 1.5rem;">ABOUT US</a>
+            <a href="menu.html" class="menu-item" style="font-size: 1.5rem;">OUR MENU</a>
+            <a href="booking.html" class="menu-item" style="font-size: 1.5rem;">BOOK A TABLE</a>
+        </div>
+    </div>
+
+    <main class="pt-24 lg:pt-32 p-8 page-content">
+        <div class="max-w-6xl mx-auto text-center mb-10">
+            <h1
+                style="font-size: 4rem; font-weight: 700; color: #1f2937; margin-bottom: 1rem; font-family: 'Unbounded', sans-serif;">
+                Our Menu
+            </h1>
+            <p style="font-size: 1.5rem; color: #4b5563; font-family: 'Unbounded', sans-serif;">
+                Crafted with care, served with passion.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="bg-gray-100 rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+                <h2 class="text-2xl font-bold mb-2 font-unbounded">Espresso</h2>
+                <p class="text-gray-600 mb-4 font-inter">A rich, concentrated shot of our signature blend.</p>
+                <span class="font-bold text-xl text-gray-800">$3.00</span>
+            </div>
+            <div class="bg-gray-100 rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+                <h2 class="text-2xl font-bold mb-2 font-unbounded">Latte</h2>
+                <p class="text-gray-600 mb-4 font-inter">Espresso with steamed milk and a thin layer of foam.</p>
+                <span class="font-bold text-xl text-gray-800">$4.50</span>
+            </div>
+            <div class="bg-gray-100 rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+                <h2 class="text-2xl font-bold mb-2 font-unbounded">Cappuccino</h2>
+                <p class="text-gray-600 mb-4 font-inter">Espresso with a thick, frothy layer of foamed milk.</p>
+                <span class="font-bold text-xl text-gray-800">$4.50</span>
+            </div>
+            <div class="bg-gray-100 rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+                <h2 class="text-2xl font-bold mb-2 font-unbounded">Cold Brew</h2>
+                <p class="text-gray-600 mb-4 font-inter">Smooth, low-acidity coffee steeped for 16 hours.</p>
+                <span class="font-bold text-xl text-gray-800">$5.00</span>
+            </div>
+            <div class="bg-gray-100 rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+                <h2 class="text-2xl font-bold mb-2 font-unbounded">Mocha</h2>
+                <p class="text-gray-600 mb-4 font-inter">Chocolate-infused latte, topped with whipped cream.</p>
+                <span class="font-bold text-xl text-gray-800">$5.50</span>
+            </div>
+            <div class="bg-gray-100 rounded-lg shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+                <h2 class="text-2xl font-bold mb-2 font-unbounded">Matcha Latte</h2>
+                <p class="text-gray-600 mb-4 font-inter">Organic matcha green tea with steamed milk.</p>
+                <span class="font-bold text-xl text-gray-800">$5.00</span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4 font-unbounded text-white">Coffee Brew</h2>
+            <p class="mb-4 text-gray-400 font-inter">Crafted with passion, served with love.</p>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200"><i
+                        class="fab fa-twitter"></i></a>
+            </div>
+            <p class="text-sm text-gray-500 font-inter">&copy; 2025 Coffee Brew. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="page-transition-overlay" class="page-transition-overlay"></div>
+    <script src="script-other-pages.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
