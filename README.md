@@ -1,62 +1,44 @@
-Coffee Brew Website
-A modern, responsive, multi-page coffee shop website featuring an engaging design, smooth animations, and a unique "crayon wipe" page transition effect.
+Here’s the revised, clean version of your `README.md` **without the file structure** section:
 
-Project Description
-This website is a front-end project designed for a fictional coffee shop named "Coffee Brew." It is built using HTML5, CSS3 with Tailwind CSS for utility classes, and vanilla JavaScript.
+---
 
-Key features include:
+# ☕ Coffee Brew Website
 
-A responsive and clean layout that adapts to different screen sizes.
+A modern, responsive multi-page website for a fictional coffee shop, built with **HTML5**, **CSS3 (Tailwind CSS)**, and **vanilla JavaScript**.
 
-A dynamic side menu for easy navigation.
+## 🚀 Features
 
-An animated masonry-style image gallery on the homepage.
+* Fully responsive and mobile-friendly layout
+* Animated **side menu panel**
+* **Masonry-style image grid** with scroll-triggered fade-ins
+* Unique **“crayon wipe” page transition** effect
+* Smooth slide-up animations for content
 
-Smooth page transitions using a custom "crayon wipe" effect that simulates a page being colored over with a yellow crayon.
+## 🛠️ Usage
 
-Page content and masonry items fade in with a subtle slide-up effect as they become visible.
+1. **No installation needed**
+2. Open any HTML file (e.g., `index.html`) in your browser
+3. All libraries (Tailwind, Google Fonts) are loaded via CDN
 
-File Structure
-The project is organized into the following file structure:
+## ✨ Page Transitions
 
-/
-├── index.html           # The homepage
-├── about.html           # The About Us page
-├── menu.html            # The Our Menu page
-├── booking.html         # The Book a Table page
-├── style.css            # Custom CSS for layout, animations, and transitions
-├── script.js            # JavaScript for menu, page transitions, and image galleries
-└── /images/             # Directory containing all image assets
-    ├── pexels-apgpotr-683039.jpg
-    ├── pexels-brigitte-tohm-36757-143642.jpg
-    ├── pexels-chevanon-302899.jpg
-    ├── pexels-chevanon-324028.jpg
-    └── ... (other image files)
+* Uses `.page-transition-overlay` and `clip-path` for crayon effect
+* Triggered by internal link clicks via JavaScript
+* New content fades in via `.page-content` wrapper
 
-Setup and Usage
-To run this project, simply open any of the HTML files (index.html, about.html, etc.) in your web browser. There are no dependencies to install, and all external libraries (Tailwind CSS, Font Awesome, Google Fonts) are loaded via CDN.
+## 🖼️ Image Grid
 
-Page Transitions
-The custom page transition is handled by style.css and script.js.
+* Responsive **masonry layout** with subtle scroll animations
+* Includes **auto-sliding image panels**
+* Intersection Observer handles scroll-based fade-ins
 
-The .page-transition-overlay element in each HTML file is a full-screen yellow div.
+## 🎨 Customization
 
-The script.js listens for clicks on internal links and triggers a clip-path animation defined in style.css to create the "crayon wipe" effect.
+* **Colors:** Change `.page-transition-overlay` background in `style.css`
+* **Fonts:** Edit `<link>` tags in HTML or `font-family` in `style.css`
+* **Images:** Replace files in `/images/` and update `<img>` paths
+* **Timing:** Tweak durations in `style.css` keyframes or JS `setTimeout`
 
-The new page content, wrapped in a .page-content div, then fades in smoothly after a short delay.
+---
 
-Image Gallery
-The masonry image gallery on the homepage is powered by custom CSS and a small JavaScript snippet in script.js that:
-
-Sets up a simple image slider in two of the gallery panels.
-
-Adds a "fade-in on scroll" effect using the Intersection Observer API.
-
-Customization
-Colors: To change the "crayon wipe" color, modify the background-color property of .page-transition-overlay in style.css.
-
-Fonts: The project uses "Unbounded" for headings and "Inter" for body text. You can easily change these by updating the <link> tags in the HTML files and the font-family properties in style.css.
-
-Images: All image assets are located in the images directory. To use your own, replace the existing files with your own and update the file paths in the <img> tags of index.html.
-
-Timing: You can adjust the speed of the page transitions by changing the transition and @keyframes durations in style.css and the setTimeout duration in script.js to match.
+Let me know if you want a downloadable `.md` file or want to add demo screenshots or badges.
